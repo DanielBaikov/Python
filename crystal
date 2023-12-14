@@ -1,0 +1,19 @@
+import pandas as pd
+# Pirmās tabulas izveide ar ražas datiem
+data = {
+     "Rauga": ["Kvieši", "rudzi", "mieži", "kartupeļi"],
+     Ienesīgums: [25, 10, 12000, 300],
+     'ID': ['t', 't', 'mārciņas', 'cnt']
+}
+df1 = pd.DataFrame(data)
+# Otrās tabulas izveide ar vienības identifikatora dekodēšanu
+data_units = {
+     'ID': ['t', 'mārciņas', 'cnt'],
+     'Dekodēšana': ['tonnas', 'mārciņas', 'centneri']
+}
+df2 = pd.DataFrame(data_units)
+# Izvadiet izveidotās tabulas
+print("Pirmā tabula:")
+print(df1)
+print("\nOtrā tabula:")
+print(df2)
